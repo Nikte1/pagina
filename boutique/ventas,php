@@ -1,0 +1,45 @@
+<?php
+session_start();
+require 'config.php';
+
+// Conexión a la base de datos
+$host = 'localhost';
+$usuario = 'root'; // Usuario por defecto de XAMPP
+$contraseña = ''; // Contraseña por defecto de XAMPP
+$nombre_base_datos = 'boutiquee'; // Cambia esto al nombre de tu base de datos
+
+// Crear conexión
+$conn = new mysqli($host, $usuario, $contraseña, $nombre_base_datos);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+
+// Aquí iría la lógica para manejar las ventas
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Ventas</title>
+</head>
+<body>
+    <h1>Registro de Ventas</h1>
+    <form action="php/registrar_venta.php" method="POST">
+        <input type="text" name="cliente_id" required placeholder="ID del Cliente">
+        <input type="text" name="vendedor_id" required placeholder="ID del Vendedor">
+        <input type="datetime-local" name="fecha" required>
+        <input type="text" name="forma_pago" required placeholder="Forma de Pago">
+        <input type="number" name="total" required placeholder="Total">
+        <button type="submit">Registrar Venta</button>
+    </form>
+    <a href="dashboard.php"><button>Volver al Dashboard</button></a>
+</body>
+</html>
