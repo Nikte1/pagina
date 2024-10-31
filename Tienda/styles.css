@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo general */
+    color: #333;
+}
+
+/* Estilos para la página de inicio de sesión */
+.login-page {
+    background-color: #ded5b7; /* Fondo de la página de inicio de sesión */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centrar el contenido verticalmente */
+}
+
+/* Encabezado de la página */
+header {
+    background-color: #ded5b7; /* Color de fondo del encabezado */
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #0c0c0c; /* Cambia a blanco */
+    margin: 20px 0; /* Margen superior para el salto */
+    text-decoration: underline; /* Subrayado */
+    text-decoration-color: #ded5b7; /* Color del subrayado */
+}
+
+/* Estilo para los enlaces de navegación */
+nav {
+    background-color: #ded5b7;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #a97c50; /* Café suave para los botones */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4b295; /* Color más claro al pasar el cursor */
+}
+
+/* Estilo del formulario de inicio de sesión */
+.login-form {
+    background-color: #764949; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho del formulario */
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+}
+
+/* Pie de página */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: black; /* Cambia el color a negro */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer span {
+    border-bottom: 2px solid #ded5b7; /* Borde inferior del color deseado */
+    padding-bottom: 2px; /* Espacio entre el texto y el borde */
+}
