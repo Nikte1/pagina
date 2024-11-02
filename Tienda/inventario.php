@@ -5,7 +5,7 @@ require 'config.php';
 // Conexión a la base de datos
 $host = 'localhost';
 $usuario = 'root';
-$contraseña = '';
+$contraseña = '12345';
 $nombre_base_datos = 'boutiquee';
 
 // Crear conexión
